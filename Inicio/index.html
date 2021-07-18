@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/f3bbeea45f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tablet.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="./desktop.css" media="(min-width: )">
+    <link rel="stylesheet" href="./desktop.css" media="(min-width: 992px)">
     <script defer src="./index.js" defer></script>
     <title>YIM</title>
 </head>
@@ -37,5 +37,35 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <!-- Slider Section-->
+        <section class="container .container__unvisible" id="container">
+            <section class="container-slider" id="slider">
+                <div class="container-slider__section">
+                    <img class="slider__img" src="https://i.postimg.cc/t4X2xv2R/Scientist.jpg" alt="Scientist">
+                    <div class="slider-content">
+                        <h1 id="title">Especialistas en el area médica</h1>
+                         <p id="paragraph">Servicios a sector privado y gobierno</p>
+                    </div>
+                </div>
+                <div class="container-slider__section">
+                    <img class="slider__img" src="https://i.postimg.cc/T3CQqj4V/Logistic.jpg" alt="Logistic">
+                    <div class="slider-content">
+                        <h1 class="slider-content--Lh1" id="title">Logística a nivel nacional</h1>
+                        <p class="slider-content--Lp" id="paragraph">Trabajamos medicamentos e insumos medicos</p>
+                    </div>
+                </div>
+                <div class="container-slider__section">
+                    <img class="slider__img" src="https://i.postimg.cc/d36m9QHF/Regulatorios-1.jpg" alt="Storage">
+                    <div class="slider-content">
+                        <h1 class="slider-content--Ah1" id="title">Asuntos regulatorios</h1>
+                        <p class="slider-content--Ap" id="paragraph">Avisos, permisos, licencias y certificados</p>
+                    </div>
+                </div>
+            </section>
+                <button class="container-button container-button--right container-button--right__unactive" id="button-right">></button>
+                <button class="container-button container-button--left container-button--left__unactive" id="button-left"><</button>
+        </section>
+    </main>
 </body>
 </html>
