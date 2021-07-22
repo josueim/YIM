@@ -144,6 +144,19 @@
     margin-left: 7px;
 }
 
+/*Footer*/
+footer{
+    height: 100px;
+}
+footer .left ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    list-style: none;
+}
+
 @media(min-width: 1141px) {
     .slider-content h1{
         top: -300px;

@@ -343,6 +343,42 @@ header{
     margin-left: 7px;
 }
 
+/*Footer*/
+footer{
+    display: flex;
+    width: 100%;
+    min-width: 280px;
+    height: 150px;
+    background-color: var(--yim-green);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    list-style: none;
+}
+.left li{
+    margin: 9px 0;
+}
+.left i{
+    color: var(--off-withe);
+    margin-left: 35px;
+}
+.left a {
+    text-decoration: none;
+    color: var(--off-withe);
+}
+.right img{
+    width: 60px;
+    height: 60px;
+}
+
 @media(min-width: 930px){
         /*Header and Navbar*/
     header{
