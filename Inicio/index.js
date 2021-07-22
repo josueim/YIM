@@ -14,7 +14,6 @@ const btnRight = document.querySelector("#button-right")
 const btnLeft = document.querySelector("#button-left")
 
  
-
 /*Navbar - This way we're making a responsive navbar*/ 
 navHamburger.addEventListener("click", () =>{
     navbarMenu.classList.toggle("navbar-menu_unvisible");
@@ -79,4 +78,4 @@ btnLeft.addEventListener('click', () =>{
 setInterval(function() {
     Next();
     VisibleContent()
-},3000);
+},4000);

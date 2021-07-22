@@ -53,3 +53,89 @@
     left: 15px;
     transition: left 0.3s;
 }
+
+/*Us Section*/
+.us{
+    padding: 0px 0 30px 0;
+}
+.us-separator{
+    width: 100px;
+    height: 25px;
+}
+.us h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-bottom: 10px;
+}
+.us p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.us--button{
+    margin: 35px auto; 
+    width: 160px;
+    height: 55px;
+    padding: 15px;
+    font-size: 1.8rem;
+}
+.us--button i{
+    vertical-align: -2px;
+}
+
+/*Hospital Image Section*/
+.hospital h2{
+    top: 40%;
+    padding-top: 35px;
+    font-size: 3rem;
+    line-height: 3rem;
+    left: calc(50% - 108.5px);
+}
+
+/*Services Section*/
+.services{
+    padding: 40px 0 20px 0;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.services p{
+    margin-top: 25px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+.sevices-detail--card{
+    width: 90%;
+    min-width: 252px;
+    max-width: 345px;
+    min-height: 252px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--withe);
+    border-radius: 10px;
+    border:2px solid var(--yim-green);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.sevices-detail--card i{
+    font-size: 2.2rem;
+}
+.sevices-detail--card .service--card-tittle{
+    font-size: 1.9rem;
+}
+.sevices-detail--card .service--card-body{
+    font-size: 1.5rem;
+}
+.service--card-button i{
+    vertical-align: -4px;
+    margin-left: 7px;
+}
