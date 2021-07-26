@@ -1,25 +1,14 @@
 /*const-var   navbar*/ 
 const navHamburger = document.querySelector(".navbar-hamburger")
 const navbarMenu = document.querySelector(".navbar-menu")
-    /*buttons*/ 
-var buttonR = document.querySelector(".container-button--right")
-var buttonL = document.querySelector(".container-button--left")
-    /*Slider Container*/
-const container = document.querySelector("#container")
-/*const slider*/
-const slider = document.querySelector("#slider")
-let sliderSection = document.querySelectorAll(".container-slider__section")
-let sliderSectionLast = sliderSection[sliderSection.length -1];
-const btnRight = document.querySelector("#button-right")
-const btnLeft = document.querySelector("#button-left")
-
+const sliderVisible = document.querySelector('#slider-visble')
+const buttonsVisible = document.querySelector('#buttons-visible')
  
 /*Navbar - This way we're making a responsive navbar*/ 
 navHamburger.addEventListener("click", () =>{
     navbarMenu.classList.toggle("navbar-menu_unvisible");
-    buttonR.classList.toggle("container-button--right__unactive");
-    buttonL.classList.toggle("container-button--left__unactive");
-    container.classList.toggle("container__unvisible")
+    sliderVisible.classList.toggle("slider__visible");
+    buttonsVisible.classList.toggle("buttons__visible");
 
     /*This way we make sure our page it´s accesible for everyone*/
     if(navbarMenu.classList.contains("navbar-menu_visible")){
@@ -29,53 +18,70 @@ navHamburger.addEventListener("click", () =>{
     }
 });
 
-/*This way we're making an automatic and manual slider slider*/
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-/*funtion move right*/
-function Next() {
-    let sliderSectionFirst = document.querySelectorAll(".container-slider__section")[0];
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
-        slider.style.marginLeft = "-100%";
-    },500);
+/*Slider*/
+const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const auto = false; // Auto scroll
+const intervalTime = 5000;
+let slideInterval;
+
+const nextSlide = () => {
+  // Get current class
+  const current = document.querySelector('.current');
+  // Remove current class
+  current.classList.remove('current');
+  // Check for next slide
+  if (current.nextElementSibling) {
+    // Add current to next sibling
+    current.nextElementSibling.classList.add('current');
+  } else {
+    // Add current to start
+    slides[0].classList.add('current');
+  }
+  setTimeout(() => current.classList.remove('current'));
+};
+
+const prevSlide = () => {
+  // Get current class
+  const current = document.querySelector('.current');
+  // Remove current class
+  current.classList.remove('current');
+  // Check for prev slide
+  if (current.previousElementSibling) {
+    // Add current to prev sibling
+    current.previousElementSibling.classList.add('current');
+  } else {
+    // Add current to last
+    slides[slides.length - 1].classList.add('current');
+  }
+  setTimeout(() => current.classList.remove('current'));
+};
+
+// Button events
+next.addEventListener('click', e => {
+  nextSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+prev.addEventListener('click', e => {
+  prevSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+// Auto slide
+if (auto) {
+  // Run next slide at interval time
+  slideInterval = setInterval(nextSlide, intervalTime);
 }
-/*funtion move left*/
-function Prev() {
-    let sliderSection = document.querySelectorAll(".container-slider__section");
-    let sliderSectionLast = sliderSection[sliderSection.length -1];
-    slider.style.marginLeft = "0%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('afterbegin', sliderSectionLast); 
-        slider.style.marginLeft = "-100%";
-    },500);
-}
-    /*visible content*/
-function VisibleContent() {
-    sliderContentS.classList.toggle("slider-content__visible");
-    sliderContentA.classList.toggle("slider-content__visible");
-    sliderContentL.classList.toggle("slider-content__visible");
-    setTimeout(function(){
-        sliderContentS.classList.toggle("slider-content__visible");
-        sliderContentA.classList.toggle("slider-content__visible");
-        sliderContentL.classList.toggle("slider-content__visible");
-    },300);
-}
-/*To make it manual*/
-btnRight.addEventListener('click', () =>{
-    Next();
-    VisibleContent()
-})
-btnLeft.addEventListener('click', () =>{
-    Prev();
-    VisibleContent()
-})
+
 /*To make it automatic*/
 setInterval(function() {
-    Next();
-    VisibleContent()
-},4000);
+    nextSlide();
+},5000);

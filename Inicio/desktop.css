@@ -1,54 +1,24 @@
 /*Slider*/
-.container{
-    width: 75%;
-    margin: 0x auto ;
+.slide .content {
+    left: calc(50% - 250px);
+    width: 500px;
 }
-.container-slider{
-    display: flex;
-    /*100% each image*/
-    width: 300%;
-    height: 350px;
-    margin-left: -100%; 
+.slide .content h1 {
+    font-size: 2.4rem;
 }
-.slider-content{
-    width: 85%;
-    margin: 40px auto;
+.slide .content p {
+    font-size: 2rem;
 }
-.slider-content h1{
-    padding: 0 140px;
-    top: -270px;
-    font-size: 40px;
-    font-weight: bold;
+.buttons button#next {
+    top: 39%;
+    right: 100px;
 }
-.slider-content p{
-    padding: 0 140px;
-    top: -180px;
-    font-size: 30px;
-    font-weight: 500;
+.buttons button#prev {
+    top: 39%;
+    left: 100px;
 }
-.slider-content .slider-content--Lh1{
-    top: -280px;
-}
-.slider-content .slider-content--Lp{
-    top: -180px;
-}
-.slider-content .slider-content--Ah1{
-    top: -300px;
-}
-.slider-content .slider-content--Ap{
-    top: -200px;
-}
-.container-button{
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
-    top: 45%;
-}
-.container-button--right{
-    right: 50px;
-}
-.container-button--left{
-    left: 50px;
+.buttons__visible button{
+    font-size: 3rem;
 }
 
 /*Us Section*/
@@ -77,14 +47,13 @@
 
 /*Hospital Image Section*/
 .hospital{
-    height: 60vh;
+    height: 70vh;
 }
 .hospital h2{
-    top: 45%;
-    padding-top: 35px;
-    font-size: 3.5rem;
+    top: 50%;
+    font-size: 4rem;
     line-height: 3.5rem;
-    left: calc(50% - 126.5px);
+    left: calc(50% - 155px);
 }
 
 /*Services Section*/
@@ -103,8 +72,8 @@
 .sevices-detail--card{
     width: 90%;
     min-width: 252px;
-    max-width: 345px;
-    max-height: 420px;
+    max-width: 335px;
+    min-height: 430px;
     margin: 25px auto;
     padding: 25px;
     background-color: var(--withe);

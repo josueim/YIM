@@ -93,87 +93,104 @@ header{
     transition: left 0.0s;
 }
 
+/*Body*/
+body{
+    background-color: var(--off-withe);
+}
+
 /*Slider*/
-.container{
+    /*Background Images*/
+.slide:first-child{
+    background: url('https://i.postimg.cc/PJTkrYK8/Scientist.png') no-repeat center center/cover;
+}
+.slide:nth-child(2){
+    background: url('https://i.postimg.cc/cHQSSX7S/Logistic.png') no-repeat center center/cover;
+}
+.slide:nth-child(3){
+    background: url('https://i.postimg.cc/K8vq1sMg/Cobranza.png') no-repeat center center/cover;
+}
+.slide:nth-child(4){
+    background: url('https://i.postimg.cc/3NNf91S9/Regulatoriospng.png') no-repeat center center/cover;
+}
+.slider {
     position: relative;
-    width: 90%;
-    border-radius: 15px;
     overflow: hidden;
-    margin: 20px auto 30px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-.container__unvisible{
-    width: 0%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-}
-.container-slider{
-    display: flex;
-    /*100% each image*/
-    width: 300%;
     height: 300px;
-    margin-left: -100%; 
-}
-.slider__img{
-    display: block;
+    width: 90%;
+    margin: 50px -100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(89, 73, 30, 0.4);
+} 
+.slider__visible{
+    margin: 50px auto;
+} 
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}  
+.slide.current {
+    opacity: 1;
 }
-.slider-content{
-    display: block;
-    width: 90%;
+.slide .content {
     position: absolute;
-    margin: 30px auto;
+    bottom: -300px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
     color: var(--dark-green);
+    padding: 35px;
+}  
+.slide .content h1 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
-.slider-content h1{
-    padding: 0 40px;
-    position: absolute;
-    top: -270px;
-    font-size: 25px;
-    font-weight: bold;
-    -webkit-text-stroke: .1px var(--off-withe);
+.slide .content p {
+    font-size: 1.3rem;
 }
-.slider-content p{
-    padding: 0 40px;
-    position: absolute;
-    top: -170px;
-    font-size: 16px;
-    font-weight: 900;
-    -webkit-text-stroke: .1px var(--off-withe);
+.slide.current .content {
+    opacity: 1;
+    transform: translateY(-300px);
+    transition: all 0.7s ease-in-out 0.3s;
 }
-.container-button{
+.buttons button#next {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, .5);
-    top: 45%;
-    font-size: 2.0rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.2);
+    top: 40%;
+    right: 25px;
+}
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 25px;
+}
+button {
     border: none;
+    background-color: transparent;
+    color: var(--off-withe);
     cursor: pointer;
+    padding: 8px 10px;
+    font-size: 0rem;
+    border-radius: 50%;
+    outline: none;
 }
-.container-button--right{
-    right: -50px;
+.buttons__visible button{
+    font-size: 2rem;
 }
-.container-button--left{
-    left: -50px;
-}
-.container-button--right__unactive{
-    right: 15px;
-    transition: right 0.3s;
-}
-.container-button--left__unactive{
-    left: 15px;
-    transition: left 0.3s;
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--warm-black);
 }
 
 /*Us Section*/
 .us{
     position: relative;
-    width: 90%;
+    width: 100%;
     min-width: 280px;
     height: auto;
     padding: 0px 0 20px 0;
@@ -207,7 +224,6 @@ header{
     height: 10px;
     margin-left: 8px;
     color: var(--yim-green);
-    -webkit-text-stroke: .2px var(--black);
     vertical-align: -1px;
 }
 .us h2{
@@ -215,10 +231,8 @@ header{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    padding-top: 1.5rem;
     margin: 0 auto;
     color: var(--yim-green);
-    -webkit-text-stroke: .2px var(--black);
 }
 .us p{
     width: 90%;
@@ -245,15 +259,16 @@ header{
 }
 .hospital h2{
     position: absolute;
-    top: 30%;
-    padding-top: 35px;
-    font-size: 2.4rem;
+    top: 40%;
+    padding: 10px;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--dark-green);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
     text-align: center;
-    left: calc(50% - 86.8px);
-    -webkit-text-stroke: .1px var(--off-withe);
+    left: calc(50% - 113.5px);
 }
 
 /*Services Section*/
@@ -266,6 +281,7 @@ header{
     align-self: center;
     text-align: center;
     margin: 0 auto;
+    background-color: var(--off-withe);
 }
 .services h2{
     width: 90%;
@@ -294,6 +310,7 @@ header{
     min-width: 252px;
     max-width: 400px;
     min-height: 252px;
+    height: 305px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--withe);
@@ -412,46 +429,21 @@ footer .left ul{
         transition: left 0.0s;
     }
 }
-@media(min-width: 438px){
+@media(min-width: 411px){
     /*Slider*/
-    .slider-content h1{
-        font-size: 30px;
-        font-weight: bold;
+    .buttons button#next {
+        top: 32%;
     }
-    .slider-content p{
-        font-size: 20px;
-    }
-    .slider-content .slider-content--Ap{
-        top: -150px;
-    }
-    .container-button{
-        width: 35px;
-        height: 35px;
-        border-radius: 35px;
-        top: 45%;
-    }
-    .container-button--right{
-        right: -50px;
-    }
-    .container-button--left{
-        left: -50px;
-    }
-    .container-button--right__unactive{
-        right: 15px;
-        transition: right 0.3s;
-    }
-    .container-button--left__unactive{
-        left: 15px;
-        transition: left 0.3s;
+    .buttons button#prev {
+        top: 32%;
     }
 }
-@media(min-width: 600px){
+@media(min-width: 375px){
     /*Slider*/
-    .slider-content h1{
-        font-size: 35px;
-        font-weight: bold;
+    .buttons button#next {
+        top: 30%;
     }
-    .slider-content p{
-        font-size: 25px;
+    .buttons button#prev {
+        top: 30%;
     }
 }
