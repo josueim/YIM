@@ -1,0 +1,12 @@
+/*Footer*/
+footer{
+    height: 100px;
+}
+footer .left ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    list-style: none;
+}
