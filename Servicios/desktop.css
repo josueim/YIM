@@ -1,0 +1,21 @@
+/*top*/
+.top h1{
+    font-size: 3.5rem;
+}
+.top p{
+    font-size: 2.3rem;
+}
+.services-container{
+    padding: 20px 0;
+}
+.sevices-detail--card{
+    min-width: 320px;
+    width: 300px;
+    height: 90px;
+    max-width: 400px;
+    height: 100px;
+    margin: 15px 5px;
+}
+.sevices-detail--card .service--card-tittle{
+    font-size: 1.8rem;
+}

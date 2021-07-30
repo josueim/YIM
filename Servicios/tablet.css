@@ -10,3 +10,31 @@ footer .left ul{
     line-height: 1.8;
     list-style: none;
 }
+
+/*top*/
+.top h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-bottom: 10px;
+}
+.top p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+.sevices-detail--card{
+    min-width: 350px;
+    width: 350px;
+    height: 90px;
+    max-width: 400px;
+    margin: 15px 15px;
+}
+.sevices-detail--card .service--card-tittle{
+    font-size: 1.8rem;
+}

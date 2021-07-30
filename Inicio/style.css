@@ -198,10 +198,6 @@ button {
     align-self: center;
     margin: 0 auto;
 }
-.us-separator{
-    width: 80px;
-    height: 20px;
-}
 .us--button{
     margin: 15px auto; 
     display: block;
@@ -218,12 +214,15 @@ button {
     color: var(--yim-green);
     -webkit-text-stroke: .2px var(--black);
 }
+.us--button:hover{
+    background-color: var(--yim-green);
+    color: var(--off-withe);
+}
 .us--button i{
     display: inline-block;
     width: 13px;
     height: 10px;
     margin-left: 8px;
-    color: var(--yim-green);
     vertical-align: -1px;
 }
 .us h2{
@@ -355,9 +354,15 @@ button {
     /* border:2px solid var(--yim-green); */
     -webkit-text-stroke: .2px var(--black);
 }
+.service--card-button:hover{
+    background-color: var(--yim-green);
+    color: var(--off-withe);
+}
 .service--card-button i{
     vertical-align: -3px;
     margin-left: 7px;
+}.service--card-button:hover i{
+    color: var(--off-withe);
 }
 
 /*Footer*/
@@ -429,7 +434,16 @@ footer .left ul{
         transition: left 0.0s;
     }
 }
-@media(min-width: 411px){
+@media(max-width: 540px){
+    /*Slider*/
+    .buttons button#next {
+        top: 35%;
+    }
+    .buttons button#prev {
+        top: 35%;
+    }
+}
+@media(max-width: 414px){
     /*Slider*/
     .buttons button#next {
         top: 32%;
@@ -438,12 +452,44 @@ footer .left ul{
         top: 32%;
     }
 }
-@media(min-width: 375px){
+@media(max-width: 375px){
     /*Slider*/
     .buttons button#next {
         top: 30%;
     }
     .buttons button#prev {
         top: 30%;
+    }
+}
+@media(max-width: 360px){
+    /*Slider*/
+    .buttons button#next {
+        top: 40%;
+    }
+    .buttons button#prev {
+        top: 40%;
+    }
+}
+@media(max-width: 320px){
+    /*Slider*/
+    .buttons button#next {
+        top: 40%;
+    }
+    .buttons button#prev {
+        top: 40%;
+    }
+}
+@media(max-width: 280px){
+    /*Slider*/
+    .buttons button#next {
+        top: 35%;
+    }
+    .buttons button#prev {
+        top: 35%;
+    }
+    /*Services Section*/
+    .sevices-detail--card{
+        height: 325px;
+        margin: 15px auto;
     }
 }
