@@ -19,3 +19,44 @@
 .sevices-detail--card .service--card-tittle{
     font-size: 1.8rem;
 }
+
+/*Tenders*/
+.left img{
+    height: 200px;
+}
+.left h2{
+    top: 35%;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    left: calc(50% - 108.5px);
+}
+.left .logistica{
+    left: calc(50% - 198px);
+}
+.left .collection{
+    left: calc(50% - 90px);
+    top: 35%;
+}.left .regulatory{
+    left: calc(50% - 193px);
+}
+.right h2{
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    padding-top: 2.2rem;
+}
+.right p{
+    margin-top: 10px;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 1.8rem;
+}
+.right ul{
+    width: 60%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-bottom: 1.4rem;
+}
+.right li{
+    margin-bottom: 8px;
+}

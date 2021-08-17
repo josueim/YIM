@@ -38,3 +38,43 @@ footer .left ul{
 .sevices-detail--card .service--card-tittle{
     font-size: 1.8rem;
 }
+
+/*Tenders*/
+.left img{
+    height: 150px;
+}
+.left h2{
+    top: 30%;
+    left: calc(50% - 83.5px);
+}
+.left .logistica{
+    top: 35%;
+}
+.left .collection{
+    top: 35%;
+}
+.left .regulatory{
+    top: 35%;
+    left: calc(50% - 146px);
+}
+.right h2{
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    padding-top: 2rem;
+}
+.right p{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 1.5rem;
+}
+.right ul{
+    width: 65%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    padding-bottom: 1.2rem;
+}
+.right li{
+    margin-bottom: 8px;
+}
