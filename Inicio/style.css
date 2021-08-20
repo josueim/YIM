@@ -70,7 +70,7 @@ header{
     overflow-y: auto;
     padding: 20px 0;
     /*This will move the options out of the view of the tablet*/
-    margin-top: 3px;
+    border-top: 1px solid var(--off-withe);
     transition: left 0.s;
 }
 .navbar-menu li a{
@@ -110,7 +110,7 @@ body{
     background: url('https://i.postimg.cc/K8vq1sMg/Cobranza.png') no-repeat center center/cover;
 }
 .slide:nth-child(4){
-    background: url('https://i.postimg.cc/3NNf91S9/Regulatoriospng.png') no-repeat center center/cover;
+    background: url('https://i.postimg.cc/Njm4fyNR/Regulatory.png') no-repeat center center/cover;
 }
 .slider {
     position: relative;

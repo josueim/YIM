@@ -1,0 +1,10 @@
+/*us*/
+.us{
+    height: 40vh;
+}
+.us h2{
+    top: 40%;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    left: calc(50% - 236px);
+}
