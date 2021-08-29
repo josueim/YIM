@@ -138,6 +138,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
 }
 .who--yim img{
     width: 189px;
@@ -169,6 +170,102 @@ header{
     line-height: 1.8rem;
     padding-top: 1.5rem;
     color: var(--warm-black);
+}
+
+/*Identity*/
+.identity{
+    display: block;
+    min-width: 280;
+    width: 100%;
+    height: auto;
+    background-color: var(--off-withe); 
+}
+.mision{
+    width: 90%;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: var(--yim-green);
+    border-radius: 5px;
+}
+.mision h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    padding-top: 1.5rem;
+    color: var(--dark-green);
+    text-align: center;
+    -webkit-text-stroke: .2px var(--black);
+}
+.mision p{
+    text-align: justify;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding: 1.5rem 0;
+    color: var(--off-withe);
+}
+.vision{
+    width: 90%;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: var(--yim-green);
+    border-radius: 5px;
+}
+.vision h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    padding-top: 1.5rem;
+    color: var(--dark-green);
+    text-align: center;
+    -webkit-text-stroke: .2px var(--black);
+}
+.vision p{
+    text-align: justify;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding: 1.5rem 0;
+    color: var(--off-withe);
+}
+.values{
+    width: 90%;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: var(--yim-green);
+    border-radius: 5px;
+}
+.values h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    padding: 1.5rem 0;
+    color: var(--dark-green);
+    text-align: center;
+    -webkit-text-stroke: .2px var(--black);
+}
+.values h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-top: 1rem;
+    color: var(--soft-green);
+    text-align: center;
+    -webkit-text-stroke: .2px var(--black);
+}
+.values p{
+    text-align: justify;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding: 1.5rem 0;
+    color: var(--off-withe);
 }
 
 /*Footer*/

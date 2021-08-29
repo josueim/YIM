@@ -1,3 +1,8 @@
+/*Header and Navbar*/
+.navbar-menu{
+    border-top: 0px solid var(--off-withe);
+}
+
 /*Slider*/
 .slide .content {
     left: calc(50% - 250px);

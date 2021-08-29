@@ -1,7 +1,4 @@
 /*us*/
-.us:first-child{
-    background: url('https://i.postimg.cc/4yjrY4X9/us.jpg') no-repeat center top/cover;
-}
 .us{
     height: 25vh;
 }
@@ -11,6 +8,50 @@
     line-height: 3rem;
     left: calc(50% - 207.5px);
 }
+
+/*Who*/
+.who{
+    display: flex;
+    min-width: 280;
+    height: auto;
+    background-color: var(--off-withe); 
+}
+.who--yim{
+    width: 40%;
+}
+.who--yim img{
+    width: 236px;
+    height: 90px;
+    padding: 5px 0;
+}
+.who--text{
+    width: 50%;
+}
+/*Identity*/
+.distribution {
+    display: flex;
+}
+.mision{
+    width: 45%;
+}
+.vision{
+    width: 45%;
+}
+.values{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+}
+.values section{
+    display: flex;
+}
+.values div{
+    width: 45%;
+    margin: 0 auto;
+}
+
 
 /*Footer*/
 footer{
