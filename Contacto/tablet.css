@@ -1,0 +1,49 @@
+/*Format - tittle*/
+.tablet{
+    width: 100%;
+    display: flex;
+}
+
+/*Form*/
+.container{
+    width: 50%;
+    padding: 30px;
+}
+.container input{
+    padding: .5rem;
+}
+.container textarea{
+    padding: .5rem;
+}
+
+/*Contact*/
+.container-contact{
+    width: 50%;
+    margin: auto 10px;
+}
+.container-contact h3{
+    margin-bottom: 0px;
+}
+.container-contact div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-contact img{
+    width: 164px;
+    height: 98px;
+    margin-top: 20px;
+}
+
+/*Footer*/
+footer{
+    height: 100px;
+}
+footer .left ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    list-style: none;
+}

@@ -1,0 +1,11 @@
+/*Header and Navbar*/
+.navbar-menu{
+    border-top: 0px solid var(--off-withe);
+}
+
+/*Contact*/
+.container-contact{
+    width: 50%;
+    margin: auto 10px;
+    text-align: center;
+}
