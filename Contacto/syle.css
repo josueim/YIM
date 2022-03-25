@@ -44,6 +44,12 @@ header{
     padding: 5px 0;
     margin-left: 5px;
 }
+.navbar-logo img{
+    width: 189px;
+    height: 72px;
+    padding: 5px 0;
+    margin-left: 5px;
+}
 .navbar-hamburger{
     /*This won't be shown in desktop view*/
     background: none;
@@ -98,7 +104,7 @@ footer{
     display: flex;
     width: 100%;
     min-width: 280px;
-    height: 150px;
+    height: auto;
     background-color: var(--yim-green);
 }
 footer section{
@@ -123,6 +129,9 @@ footer .left ul{
 .left a {
     text-decoration: none;
     color: var(--off-withe);
+}
+.left a:hover{
+    color: var(--dark-green);
 }
 .right img{
     width: 60px;

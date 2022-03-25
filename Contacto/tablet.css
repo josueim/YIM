@@ -1,5 +1,6 @@
 /*Format - tittle*/
 .tablet{
+    height: 780px;
     width: 100%;
     display: flex;
 }
@@ -17,6 +18,10 @@
 }
 
 /*Contact*/
+.container{
+    height: auto;
+    margin-top: 9rem;
+}
 .container-contact{
     width: 50%;
     margin: auto 10px;
@@ -46,4 +51,22 @@ footer .left ul{
     font-weight: 500;
     line-height: 1.8;
     list-style: none;
+}
+
+@media(max-width: 768px){
+    .tablet{
+        height: 560px;
+        width: 100%;
+        display: flex;
+    }
+}
+@media(max-width: 820px){
+    .tablet{
+        height: 660px;
+        width: 100%;
+        display: flex;
+    }
+    .container{
+        margin-top: 4.5rem;
+    }
 }
