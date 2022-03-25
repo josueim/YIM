@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="YIM es una empresa que ofrece diferentes servicios,
+    desde asuntos regulaatorios y finanzas hasta la logistica y distribucion de medicamentos">
+    <meta name="keywords" content="YIM, YIM distribuciones, serivicios de distribucion de medicamento a sector 
+    gobierno y privado, servicios de asuntos regulatorios y gestion de sistemas de calidad, planeacion de gestoria 
+    y cobranza, servicios logisticos de la industria farma">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3bbeea45f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Contacto/syle.css">
+    <link rel="stylesheet" href="./Contacto/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./Contacto/desktop.css" media="(min-width: 992px)">
+    <script defer src="./Contacto/form.js" defer></script>
+    <title>YIM</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="navbar-logo" href="../Inicio/index.html" src="https://i.postimg.cc/28bvMgsb/YIM-N-General-Horizontal.png" alt="Logo YIM">
+            <button class="navbar-hamburger" aria-label="Abir menú">
+                <!--This way we make sure we are using the correct color and heigt fot the fa bars-->
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul class="navbar-menu navbar-menu_unvisible" >
+                <li><a href="../Inicio/index.html">Inicio</a></li>
+                <li><a href="../Servicios/servicios.html">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+                <!-- <li><a href="#">Laboratorios</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.1390421270958!2d-99.08343774673978!3d19.35710810121714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd1eceef3c43%3A0x54a4cc4ceb5b6b26!2sKiosko%20Digital%20Foto%20y%20Video!5e0!3m2!1ses-419!2smx!4v1630874960288!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="form">
+            <div class="tittle">
+                <h2>Contactanos!</h2>
+            </div>
+            <div class="tablet">
+                <section class="container">
+                    <!---->
+                    <form action="https://formspree.io/f/xknkkqaa" method="POST" id="my-form">
+                        <!--Name-->
+                        <div class="form-group">
+                            <label for="firstName">Nombre:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <!--Number-->
+                        <div class="form-group">
+                            <label for="latsName">Teléfono:</label>
+                            <input type="number" id="number" name="number" min="10">
+                        </div>
+                        <!--Email-->
+                        <div class="form-group">
+                            <label for="email">Correo:</label>
+                            <input type="email" id="email" name="email"required>
+                        </div>
+                        <!--Message-->
+                        <div class="form-group">
+                            <label for="massage">Mensaje:</label>
+                            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                        </div>
+                        <!--Send Button-->
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="status"></div>
+                </section>
+                <section class="container-contact">
+                    <h3>Oficinas</h3>
+                    <p>Av. Luis Hidalgo Monrroy No.351, San Migel Iztapalapa.</p>
+                    <p>Teléfono (55) 76-16-16-32</p>
+                    <p>contacto@yim.com</p>
+                    <div>
+                        <img src="https://i.postimg.cc/2Sd8HvyT/YIM-V-Insumos-logo.png" alt="YIM - insumos médicos">
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Contactanos</a></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="https://i.postimg.cc/rmhX5wsF/YIM-N-Insumos-simbolo.png" alt="Identidad YIM">
+        </section>
+    </footer>
+</body>
+</html>
