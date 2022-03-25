@@ -44,6 +44,12 @@ header{
     padding: 5px 0;
     margin-left: 5px;
 }
+.navbar-logo img{
+    width: 189px;
+    height: 72px;
+    padding: 5px 0;
+    margin-left: 5px;
+}
 .navbar-hamburger{
     /*This won't be shown in desktop view*/
     background: none;
@@ -104,13 +110,13 @@ body{
     background: url('https://i.postimg.cc/PJTkrYK8/Scientist.png') no-repeat center center/cover;
 }
 .slide:nth-child(2){
-    background: url('https://i.postimg.cc/cHQSSX7S/Logistic.png') no-repeat center center/cover;
+    background: url('https://i.postimg.cc/Njm4fyNR/Regulatory.png') no-repeat center center/cover;
 }
 .slide:nth-child(3){
     background: url('https://i.postimg.cc/K8vq1sMg/Cobranza.png') no-repeat center center/cover;
 }
 .slide:nth-child(4){
-    background: url('https://i.postimg.cc/Njm4fyNR/Regulatory.png') no-repeat center center/cover;
+    background: url('https://i.postimg.cc/cHQSSX7S/Logistic.png') no-repeat center center/cover;
 }
 .slider {
     position: relative;
@@ -255,6 +261,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /*opacity: 0.7;*/
 }
 .hospital h2{
     position: absolute;
@@ -264,10 +271,10 @@ button {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--dark-green);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     text-align: center;
-    left: calc(50% - 113.5px);
+    left: calc(50% - 130px);
 }
 
 /*Services Section*/
@@ -396,6 +403,9 @@ footer .left ul{
     text-decoration: none;
     color: var(--off-withe);
 }
+.left a:hover{
+    color: var(--dark-green);
+}
 .right img{
     width: 60px;
     height: 60px;
@@ -446,28 +456,28 @@ footer .left ul{
 @media(max-width: 414px){
     /*Slider*/
     .buttons button#next {
-        top: 32%;
+        top: 28%;
     }
     .buttons button#prev {
-        top: 32%;
+        top: 28%;
     }
 }
 @media(max-width: 375px){
     /*Slider*/
     .buttons button#next {
-        top: 30%;
+        top: 36%;
     }
     .buttons button#prev {
-        top: 30%;
+        top: 36%;
     }
 }
 @media(max-width: 360px){
     /*Slider*/
     .buttons button#next {
-        top: 40%;
+        top: 34%;
     }
     .buttons button#prev {
-        top: 40%;
+        top: 34%;
     }
 }
 @media(max-width: 320px){
