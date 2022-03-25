@@ -28,6 +28,12 @@
 .left img{
     height: 200px;
 }
+.left h1{
+    top: 35%;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    left: calc(50% - 108.5px);
+}
 .left h2{
     top: 35%;
     font-size: 3.5rem;

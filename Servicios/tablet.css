@@ -43,6 +43,11 @@ footer .left ul{
 .left img{
     height: 150px;
 }
+.left h1{
+    font-size: 2.2rem;
+    top: 30%;
+    left: calc(50% - 83.5px);
+}
 .left h2{
     top: 30%;
     left: calc(50% - 83.5px);

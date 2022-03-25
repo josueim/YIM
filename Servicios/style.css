@@ -44,6 +44,12 @@ header{
     padding: 5px 0;
     margin-left: 5px;
 }
+.navbar-logo img{
+    width: 189px;
+    height: 72px;
+    padding: 5px 0;
+    margin-left: 5px;
+}
 .navbar-hamburger{
     /*This won't be shown in desktop view*/
     background: none;
@@ -165,7 +171,6 @@ header{
 }
 
 /*Services*/
-/*Tenders*/
 .servicio{
     display: block;
     width: 100%;
@@ -194,7 +199,7 @@ header{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--dark-green);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     text-align: center;
     left: calc(50% - 83px);
@@ -214,6 +219,15 @@ header{
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+.right h1{
+    width: 90%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    color: red;
 }
 .right h2{
     width: 90%;
@@ -307,6 +321,9 @@ footer .left ul{
 .left a {
     text-decoration: none;
     color: var(--off-withe);
+}
+.left a:hover{
+    color: var(--dark-green);
 }
 .right img{
     width: 60px;

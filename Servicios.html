@@ -21,16 +21,18 @@
 <body>
     <header>
         <nav class="navbar">
-            <img class="navbar-logo" src="https://i.postimg.cc/28bvMgsb/YIM-N-General-Horizontal.png" alt="Logo YIM">
+            <a class="navbar-logo" href="Inicio.html">
+                <img src="https://i.postimg.cc/28bvMgsb/YIM-N-General-Horizontal.png" alt="Logo YIM">
+            </a>
             <button class="navbar-hamburger" aria-label="Abir menú">
                 <!--This way we make sure we are using the correct color and heigt fot the fa bars-->
                 <i class="fa fa-bars"></i>
             </button>
             <ul class="navbar-menu navbar-menu_unvisible" >
-                <li><a href="../Inicio/index.html">Inicio</a></li>
+                <li><a href="./Inicio.html">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
-                <li><a href="../Contacto/index.html">Contacto</a></li>
-                <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+                <li><a href="./Nosotros.html">Nosotros</a></li>
                 <!-- <li><a href="#">Laboratorios</a></li> -->
             </ul>
         </nav>
@@ -43,6 +45,13 @@
                    en diferentes áreas como cobranza y asuntos regulatorios.</p>
             <!--Cards Services-->
             <section class="services-container">
+                <section class="services-card--container"><!--Regulatory-->
+                    <a class="sevices-detail--card"  href="#regulatory"> 
+                        <i class="fas fa-clipboard-check"></i>
+                        <p class="service--card-tittle service--card-tittle_R">Asuntos regulatorios y gestión de calidad</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </section>
                 <article class="services-card--container"><!--Tenders-->
                     <a class="sevices-detail--card" href="#tenders">
                         <i class="fas fa-handshake"></i>
@@ -64,13 +73,43 @@
                         <i class="fas fa-chevron-down"></i>
                     </a>
                 </section>  
-                <section class="services-card--container"><!--Regulatory-->
-                    <a class="sevices-detail--card"  href="#regulatory"> 
-                        <i class="fas fa-clipboard-check"></i>
-                        <p class="service--card-tittle service--card-tittle_R">Asuntos regulatorios y gestión de calidad</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </section>
+            </section>
+        </section>
+        <!--Regulatory-->
+        <section class="servicio">
+            <section class="left">
+                <img src="https://i.postimg.cc/Njm4fyNR/Regulatory.png" alt="Regulación" id="regulatory">
+                <h2 class="regulatory">Regulatorios y calidad</h2>
+            </section>
+            <section class="right">
+                <h2>Brindamos apoyo y asesorías en asuntos regulatorios y gestión de sistemas de calidad</h2>
+                <p>Especialistas en cumplimiento de la normatividad nacional e internacional en materia de medicamentos, dispositivos  
+                   médicos, suplementos alimenticios, cosméticos, remedios herbolarios en las áreas de Asuntos Regulatorios, Sistemas 
+                   de Calidad, Importación y exportación, Farmacovigilancia, Marcas, patentes, Tecnovigilancia, asuntos legales.</p>
+                <p>SERVICIOS</p>
+                <ul>
+                    <li>Revisión, implementación y adecuación a Sistemas de Gestión de Calidad (SGC)</li>
+                    <li>Revisión y armado de dossier para Registro Sanitario de medicamentos </li>
+                    <li>Revisión y armado de dossier para Registro Sanitario de Dispositivos Médicos de Bajo Riesgo</li>
+                    <li>Revisión y armado de dossier para Registro Sanitario para Clase I, II y III ante la COFEPRIS</li>
+                    <li>Damos seguimiento a las diversas etapas del concurso, como apertura de ofertas y fallo del concurso</li>
+                    <li>Capacitación regulatoria y normativa así como asesoría a la industría Farmaceutica</li>
+                    <li>Contamos con registro como agente capacitador externo ante la Secretaría de Trabajo y Previsión Social 
+                        (STPS) con número DIS-100823-IB7-0013</li>
+                    <li>Armado de Expediente Maestro de Sitio de Fabricaicón (EMSF)</li>
+                    <li>Plan maestro de validación, protocolos de calificación y validación, adecuación a Manual de Calidad</li>
+                    <li>Predictamen por Tercero Autorizado para Registros Sanitarios de Medicamentos y Dispositivos Médicos</li>
+                    <li>Alta de la Unidad de Farmacovigilancia y Tecnovigilancia</li>
+                    <li>Informe de farmaco y tecnovigilancia, reportes periodicos de seguridad</li>
+                    <li>Alta y modificación a avisos de funcionamiento para establecimientos de insumos para la salud, salud 
+                        ambiental, productos, servicios, y servicios de salud</li>
+                    <li>Permisos de Importación</li>
+                    <li>Obtención de Licencias Sanitarias y Certificados de Buenas Prácticas de Fabricaicón (CBPF)</li>
+                    <li>Asesoría en respuestas a Actas de Verificación derivada de visitas de verificación de la COFEPRIS para 
+                        obtención de Licencia y CBPF</li>
+                    <li>Traducciones simples y legales</li>
+                </ul>
+                <a class="right--button" href="./Contacto.html">Contactanos<i class="fas fa-arrow-right"></i></a>
             </section>
         </section>
         <!--Tenders-->
@@ -80,6 +119,7 @@
                 <h2>Licitaciones</h2>
             </section>
             <section class="right">
+                <h1 class="right-proximo">Próximamente, nos estámos preparando para brindarte un mejor servicio</h1>
                 <h2> Servicio especializado en la preparación y presentación de Licitaciones y adjudicaciones directas</h2>
                 <p>Con más de 20 años de experiencia en la Industria Farmacéutica, conocemos plenamente los procesos de búsqueda
                     y presentación de Adjudicaciones Directas y Licitaciones de las siguientes dependencias de Gobierno:</p>
@@ -102,7 +142,7 @@
                     <li>Realizamos la preparación y presentación de ofertas</li>
                     <li>Damos seguimiento a las diversas etapas del concurso, como apertura de ofertas y fallo del concurso.</li>
                 </ul>
-                <a class="right--button" href="../Contacto/index.html">Contactanos<i class="fas fa-arrow-right"></i></a>
+                <a class="right--button" href="./Contacto.html">Contactanos<i class="fas fa-arrow-right"></i></a>
             </section>
         </section>
         <!--Logistic-->
@@ -112,6 +152,7 @@
                 <h2 class="logistica">Logistica y Almacenaje</h2>
             </section>
             <section class="right">
+                <h1 class="right-proximo">Próximamente, nos estámos preparando para brindarte un mejor servicio</h1>
                 <h2>Especialistas en logística y almacenaje de medicamentos e insumos para la salud</h2>
                 <p>Nuestros integrantes cuentan con más de 10 años de experiencia, ponemos a su disposición nuestro servicio 
                    de recolección, distribución terrestre, almacenaje y acondicionamiento. Conocemos plenamente los procesos 
@@ -160,7 +201,7 @@
                         reconocida a nivel nacional</li>
                     <li>Producto asegurado contra robo y otros</li>
                 </ul>
-                <a class="right--button" href="../Contacto/index.html">Contactanos<i class="fas fa-arrow-right"></i></a>
+                <a class="right--button" href="./Contacto.html">Contactanos<i class="fas fa-arrow-right"></i></a>
             </section>
         </section>
         <!--Collection-->
@@ -170,6 +211,7 @@
                 <h2  class="collection">Cobranza</h2>
             </section>
             <section class="right">
+                <h1 class="right-proximo">Próximamente, nos estámos preparando para brindarte un mejor servicio</h1>
                 <h2>Gestión de cobranza cubriendo los procesos, de recolectar la documentación necesaria</h2>
                 <p>Preparando toda la documentación necesaria y presentando los documentos a revisión de acuerdo a los procesos 
                    de cada Institución. Conocemos plenamente los procesos de revisión y cobro de las siguientes dependencias de 
@@ -209,51 +251,14 @@
                     <li>2 gestores en Coahuila</li>
                     <li>3 gestores en Veracruz</li>
                 </ul>
-                <a class="right--button" href="../Contacto/index.html">Contactanos<i class="fas fa-arrow-right"></i></a>
-            </section>
-        </section>
-        <!--Regulatory-->
-        <section class="servicio">
-            <section class="left">
-                <img src="https://i.postimg.cc/Njm4fyNR/Regulatory.png" alt="Regulación" id="regulatory">
-                <h2 class="regulatory">Regulatorios y calidad</h2>
-            </section>
-            <section class="right">
-                <h2>Brindamos apoyo y asesorías en asuntos regulatorios y gestión de sistemas de calidad</h2>
-                <p>Especialistas en cumplimiento de la normatividad nacional e internacional en materia de medicamentos, dispositivos  
-                   médicos, suplementos alimenticios, cosméticos, remedios herbolarios en las áreas de Asuntos Regulatorios, Sistemas 
-                   de Calidad, Importación y exportación, Farmacovigilancia, Marcas, patentes, Tecnovigilancia, asuntos legales.</p>
-                <p>SERVICIOS</p>
-                <ul>
-                    <li>Revisión, implementación y adecuación a Sistemas de Gestión de Calidad (SGC)</li>
-                    <li>Revisión y armado de dossier para Registro Sanitario de medicamentos </li>
-                    <li>Revisión y armado de dossier para Registro Sanitario de Dispositivos Médicos de Bajo Riesgo</li>
-                    <li>Revisión y armado de dossier para Registro Sanitario para Clase I, II y III ante la COFEPRIS</li>
-                    <li>Damos seguimiento a las diversas etapas del concurso, como apertura de ofertas y fallo del concurso</li>
-                    <li>Capacitación regulatoria y normativa así como asesoría a la industría Farmaceutica</li>
-                    <li>Contamos con registro como agente capacitador externo ante la Secretaría de Trabajo y Previsión Social 
-                        (STPS) con número DIS-100823-IB7-0013</li>
-                    <li>Armado de Expediente Maestro de Sitio de Fabricaicón (EMSF)</li>
-                    <li>Plan maestro de validación, protocolos de calificación y validación, adecuación a Manual de Calidad</li>
-                    <li>Predictamen por Tercero Autorizado para Registros Sanitarios de Medicamentos y Dispositivos Médicos</li>
-                    <li>Alta de la Unidad de Farmacovigilancia y Tecnovigilancia</li>
-                    <li>Informe de farmaco y tecnovigilancia, reportes periodicos de seguridad</li>
-                    <li>Alta y modificación a avisos de funcionamiento para establecimientos de insumos para la salud, salud 
-                        ambiental, productos, servicios, y servicios de salud</li>
-                    <li>Permisos de Importación</li>
-                    <li>Obtención de Licencias Sanitarias y Certificados de Buenas Prácticas de Fabricaicón (CBPF)</li>
-                    <li>Asesoría en respuestas a Actas de Verificación derivada de visitas de verificación de la COFEPRIS para 
-                        obtención de Licencia y CBPF</li>
-                    <li>Traducciones simples y legales</li>
-                </ul>
-                <a class="right--button" href="../Contacto/index.html">Contactanos<i class="fas fa-arrow-right"></i></a>
+                <a class="right--button" href="./Contacto.html">Contactanos<i class="fas fa-arrow-right"></i></a>
             </section>
         </section>
     </main>
     <footer>
         <section class="left">
             <ul>
-                <li><a href="../Contacto/index.html">Contactanos</a></li>
+                <li><a href="./Contacto.html">Contactanos</a></li>
                 <li><i class="fab fa-facebook-f"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
             </ul>
