@@ -44,6 +44,12 @@ header{
     padding: 5px 0;
     margin-left: 5px;
 }
+.navbar-logo img{
+    width: 189px;
+    height: 72px;
+    padding: 5px 0;
+    margin-left: 5px;
+}
 .navbar-hamburger{
     /*This won't be shown in desktop view*/
     background: none;
@@ -120,7 +126,7 @@ header{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--dark-green);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     text-align: center;
     left: calc(50% - 134px);
@@ -193,7 +199,7 @@ header{
     font-weight: bold;
     line-height: 2.6rem;
     padding-top: 1.5rem;
-    color: var(--dark-green);
+    color: var(--off-withe);
     text-align: center;
     -webkit-text-stroke: .2px var(--black);
 }
@@ -219,7 +225,7 @@ header{
     font-weight: bold;
     line-height: 2.6rem;
     padding-top: 1.5rem;
-    color: var(--dark-green);
+    color: var(--off-withe);
     text-align: center;
     -webkit-text-stroke: .2px var(--black);
 }
@@ -245,7 +251,7 @@ header{
     font-weight: bold;
     line-height: 2.6rem;
     padding: 1.5rem 0;
-    color: var(--dark-green);
+    color: var(--off-withe);
     text-align: center;
     -webkit-text-stroke: .2px var(--black);
 }
@@ -298,6 +304,9 @@ footer .left ul{
 .left a {
     text-decoration: none;
     color: var(--off-withe);
+}
+.left a:hover{
+    color: var(--dark-green);
 }
 .right img{
     width: 60px;
