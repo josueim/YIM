@@ -9,3 +9,14 @@
     margin: auto 10px;
     text-align: center;
 }
+
+@media(min-width: 768px){
+    .tablet{
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+    .container{
+        margin-top: 0rem;
+    }
+}
