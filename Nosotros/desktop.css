@@ -4,6 +4,9 @@
 }
 
 /*us*/
+.us:first-child{
+    background: url('https://i.postimg.cc/4yjrY4X9/us.jpg') no-repeat center center/cover;
+}
 .us{
     height: 40vh;
 }

@@ -113,7 +113,7 @@ body{
     background: url('https://i.postimg.cc/Njm4fyNR/Regulatory.png') no-repeat center center/cover;
 }
 .slide:nth-child(3){
-    background: url('https://i.postimg.cc/K8vq1sMg/Cobranza.png') no-repeat center center/cover;
+    background: url('https://i.postimg.cc/ZRFy06bG/Medicamento.png') no-repeat center center/cover;
 }
 .slide:nth-child(4){
     background: url('https://i.postimg.cc/cHQSSX7S/Logistic.png') no-repeat center center/cover;
@@ -357,7 +357,7 @@ button {
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
-    color: red;
+    color: var(--yim-green);
     /* border:2px solid var(--yim-green); */
     -webkit-text-stroke: .2px var(--black);
 }
